@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="icon" type="image/x-icon" href="/assets/favicon.png"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/solid.min.css">
+  <title> Home | CP-GRIND</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+  <link href="/css/partial.css" rel="stylesheet">
+<link rel="stylesheet" href="/css/login.css">
+<link rel="stylesheet" href="/css/index.css">
+<link rel="stylesheet" href="/css/partial.css">
+</head>
+<body>
+    <header>
+    <a href="/404.html" class="logo"><i class="fas fa-code"></i> CP-GRIND</a>
+
+    <div id="menu" class="fas fa-bars"></div>
+    <nav class="navbar">
+      <ul>
+        <li><a class="active" href="/">Home</a></li>
+        <li><a href="/grind">Grind</a></li>
+        <li><a href="/dasboard">Dashboard</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+<div class="text-center">
+    <br><h1>CP GRIND</h1><br>
+    <p>{{ .Message }}</p>
+    <h2>Welcome {{ .User }}!</h2>
+    <form action="/logout" class="text-center" method="POST">
+        <button type="submit" class="btn btn-outline-danger">Log Out</button>
+    </form>
+    <form action="/cfProfile" class="inputs" method="POST">
+        <div class="row text-center">
+            <input type="text" class="form-control" name="cf-handle" placeholder="Codeforces Handle" required style="border: 1px solid #141c1f;background-color: rgba(15, 15, 15, 0.7);">
+            <button type="submit" class="btn btn-outline-primary">Submit</button>
+        </div>
+    </form>
+    {{ .CF_Profile }}
+</div>
+</body>
+<!---
+CF API
+key: 0e729cf07721907744becb57fd1d16d75eeb9587
+secret: 0c1d959e4854e110182e111853c0597fe132f19c
+ --->

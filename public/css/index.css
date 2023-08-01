@@ -1,0 +1,22 @@
+.main_container{
+    background-color: rgba(15, 15, 15, 0.7);
+    position: fixed;
+    border-radius: 3rem;
+    left: 250px;
+    width: 900px;
+    height: 500px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(5px 5px 5px 5px rgba(0,0,0,0.3));
+    box-shadow: 5px 5px 5px 3px rgba(0,0,0,0.3);
+}
+
+.inputs{
+    width: 300px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}

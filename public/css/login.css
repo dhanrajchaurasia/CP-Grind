@@ -1,0 +1,80 @@
+.dark_mode{
+    color:#fff;
+}
+.main_container{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#sign_up, #sign_in{
+    background-color: rgba(15, 15, 15, 0.7);
+    position: fixed;
+    border-radius: 3rem;
+    left: 250px;
+    width: 900px;
+    height: 500px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    filter: drop-shadow(5px 5px 5px 5px rgba(0,0,0,0.3));
+    box-shadow: 5px 5px 5px 3px rgba(0,0,0,0.3);
+}
+#sign_up{
+    display: flex;
+}
+#sign_in{
+    display: none;
+}
+.inputg{
+    width: 300px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+input[type=text]::placeholder, input[type=email]::placeholder, input[type=password]::placeholder{
+    color:#7b7b7b;
+}
+input:not(:placeholder-shown) {
+    background-color: #7b7b7b;
+    color: #fff;
+}
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus{
+    color: #fff;
+}
+input[type=text]:required:valid, input[type=email]:required:valid, input[type=password]:required:valid{
+    color: #fff;
+}
+.left_part, .right_part{
+    width: 450px; /* Half of the parent */
+    height: inherit;
+    overflow: hidden;
+}
+#sign_in > .left_part{
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+#sign_up > .left_part{
+    padding-left: 40px;
+}
+#sign_in > .right_part{
+    padding-right: 40px;
+}
+#sign_up > .right_part{
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+#sign_up > .right_part > img{
+    object-fit: cover;
+    height: 500px;
+    width: 500px;
+}
+#sign_in > .left_part > img{
+    object-fit: cover;
+    height: 500px;
+    width: 500px;
+}
+h1{
+    color: #ffffff;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3);
+}
