@@ -1,4 +1,4 @@
-# Project Name: RESTful API with Golang (Fiber) and PostgreSQL
+# CP-GRIND
 
 ## Table of Contents
 - [Introduction](#introduction)
