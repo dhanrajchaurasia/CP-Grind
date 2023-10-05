@@ -12,7 +12,7 @@
 This project is a RESTful API built using the Golang web framework Fiber and PostgreSQL as the database. It provides a foundation for building and deploying RESTful web services. You can use this project as a starting point for creating your own APIs or as a learning resource for Golang and PostgreSQL integration.
 
 ### Features
-- Integration with Codeforces and AtCoder APIs: This project leverages the Codeforces and AtCoder APIs to retrieve contest data, user information, and other related data. It fetches data from these platforms, processes it, and exposes it through RESTful APIs.
+- Integration with Codeforces and AtCoder APIs: This project leverages the [Codeforces](https://codeforces.com/apiHelp) and [AtCoder](https://github.com/kenkoooo/AtCoderProblems/blob/master/doc/api.md) APIs to retrieve contest data, user information, and other related data. It fetches data from these platforms, processes it, and exposes it through RESTful APIs.
 - Data Modification and Presentation: The project not only fetches data from Codeforces and AtCoder but also allows you to modify and present the data in a customized way through its RESTful endpoints.
 - Flexible and Extendable: You can easily extend the functionality of this project to integrate with other APIs or add additional features to suit your specific needs.
 
