@@ -6,6 +6,3 @@ func GrindPage(c *fiber.Ctx) error {
 	return c.Render("home/grind", fiber.Map{})
 }
 
-func AddProblem(c *fiber.Ctx) error {
-	
-}
